@@ -1,5 +1,6 @@
 @extends('backend.index')
 @section('content')
+
 <div class="br-pagebody mg-t-5 pd-x-30">
     <div class="col-xl-12">
         <div class="card">

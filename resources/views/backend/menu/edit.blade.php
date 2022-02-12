@@ -1,12 +1,13 @@
 @extends('backend.index')
 @section('content')
+
 <div class="br-pagebody mg-t-5 pd-x-30">
     <div class="col-xl-12">
         <div class="card">
 
             <div class="card-body">
                 <form action="{{ route('menu.update', $menus->id) }}" method="POST">
-                    {{ csrf_field() }}
+                    @csrf
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group fill">
@@ -41,8 +42,8 @@
                         <div class="col-md-12 mt-3">
                             <div class="form-group">
                                 <a href="{{ route('menu.index') }}"
-                                    class="btn  btn-danger ml-3">{{ trans('text.cancel') }}</a>
-                                <button type="submit" class="btn  btn-primary ml-3">{{ trans('text.save') }}</button>
+                                    class="btn  btn-danger ml-3">İptal</a>
+                                <button type="submit" class="btn  btn-primary ml-3">Kaydet</button>
                             </div>
                         </div>
                     </div>
@@ -58,7 +59,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript">
-        let addRowRoute = "{{ route('menu.update, $menus->id') }}"
-    </script>
+
 @endsection
