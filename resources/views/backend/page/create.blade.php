@@ -6,7 +6,7 @@
         <div class="card">
 
             <div class="card-body">
-                <form action="{{ route('menu.store') }}" method="POST">
+                <form action="{{ route('page.store') }}" method="POST">
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-md-6">
@@ -33,8 +33,18 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="title">Menü Adı</label>
-                                    <input type="text" class="form-control" placeholder="Menü Adı" name="title">
+                                    <label for="title">Sayfa Adı</label>
+                                    <input type="text" class="form-control" placeholder="Sayfa Adı" name="title">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="content">İçerik</label>
+                                    <textarea type="text" class="form-control" placeholder="" name="content"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +53,7 @@
                     <div class="row">
                         <div class="col-md-12 mt-3">
                             <div class="form-group">
-                                <a href="{{ route('menu.index') }}"
+                                <a href="{{ route('page.index') }}"
                                     class="btn  btn-danger ml-3">İptal</a>
                                 <button type="submit" class="btn  btn-primary ml-3">Kaydet</button>
                             </div>
@@ -61,7 +71,5 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript">
-        let addRowRoute = "{{ route('menu.store') }}"
-    </script>
+   
 @endsection

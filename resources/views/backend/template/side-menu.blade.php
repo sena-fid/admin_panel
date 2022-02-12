@@ -10,7 +10,7 @@
       <span class="menu-item-label">MENÜ</span>
     </div>
   </a>
-  <a href="#" class="br-menu-link">
+  {{-- <a href="#" class="br-menu-link">
     <div class="br-menu-item">
       <i class="menu-item-icon icon ion-ios-photos-outline tx-24"></i>
       <span class="menu-item-label">SLİDER</span>
@@ -21,8 +21,8 @@
       <i class="menu-item-icon icon ion-ios-bookmarks-outline tx-24"></i>
       <span class="menu-item-label">BLOG</span>
     </div>
-  </a>
-  <a href="#" class="br-menu-link">
+  </a> --}}
+  <a href="{{ route('page.index') }}" class="br-menu-link">
     <div class="br-menu-item">
       <i class="menu-item-icon icon ion-ios-photos-outline tx-24"></i>
       <span class="menu-item-label">SAYFALAR</span>
