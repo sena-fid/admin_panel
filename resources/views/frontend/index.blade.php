@@ -12,7 +12,7 @@
             <figure><a class="imgover" href=""></a>
               <figcaption>
                <a href=""><h6 class="heading">{{ $item->title }}</h6></a>
-                <p>{!! Str::limit($item->content, 150) !!}</p>
+                <p>{!! Str::limit($item->summary, 150) !!}</p>
                 <a href="{{ route('frontend.blog.detail', $item->slug) }}">devamını gör</a>
               </figcaption>
             </figure>
@@ -33,9 +33,13 @@
       <ul class="nospace group center">
         <li class="one_third first">
           <article><a href="#"><i class="fas fa-eraser fa-5x btmspace-50"></i></a>
-            <h6 class="heading">HTML</h6>
-            <p class="btmspace-30">Hypertext Markup Language</p>
-            <footer><a class="btn" href="#">Öğrenmeye Başla</a></footer>
+            <h6 class="heading">PASSWORD HASH</h6>
+                <input class="hash" type="text" id="password" name="password" size="10">
+                <div id="hash">
+
+
+                </div>
+            <footer><a class="btn hash-button" href="javascript:;" onclick="getMessage()">Dene</a></footer>
           </article>
         </li>
         <li class="one_third">
@@ -56,3 +60,8 @@
     </section>
   </div>
 @endsection
+
+
+
+
+

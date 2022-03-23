@@ -8,6 +8,7 @@ use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\PageController as FrontendPageController;
+use App\Http\Controllers\Frontend\PasswordController as FrontendPasswordController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -59,3 +60,5 @@ Route::get('/', [HomeController::class, 'index'])->name('frontend.index');
 Route::get('/contact', [ContactController::class, 'index'])->name('frontend.contact');
 
 Route::get('/blog/{slug:slug}', [FrontendPageController::class, 'detail'])->name('frontend.blog.detail');
+
+Route::post('/hash-password', [FrontendPasswordController::class, 'update'])->name('frontend.hash.password');

@@ -36,5 +36,6 @@
     <link href="{{ asset('backend/assets/lib/jquery-switchbutton/jquery.switchButton.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/assets/lib/rickshaw/rickshaw.min.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/assets/lib/chartist/chartist.css') }}" rel="stylesheet">
+    <link href="{{ asset('backend/assets/ckeditor/contents.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('backend/assets/css/bracket.css') }}">
   </head>

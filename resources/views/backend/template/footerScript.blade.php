@@ -9,6 +9,7 @@
 <script src="{{ asset('backend/assets/lib/jquery.sparkline.bower/jquery.sparkline.min.js')}}"></script>
 <script src="{{ asset('backend/assets/lib/datatables/jquery.dataTables.js')}}"></script>
 <script src="{{ asset('backend/assets/lib/datatables-responsive/dataTables.responsive.js')}}"></script>
+<script src="{{ asset('backend/assets/ckeditor/ckeditor.js') }}"></script>
 
 
 <script src="{{ asset('backend/assets/js/bracket.js')}}"></script>

@@ -39,14 +39,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="content">İçerik</label>
-                                    <textarea type="text" class="form-control" placeholder="" name="content"></textarea>
-                                </div>
-                            </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="summary">Özet</label>
+                            <textarea class="form-control ckeditor" name="summary" rows="3" placeholder="Özet"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="content">İçerik</label>
+                            <textarea class="form-control ckeditor" name="content" rows="3" placeholder="İçerik"></textarea>
                         </div>
                     </div>
 
@@ -71,5 +75,5 @@
 @endsection
 
 @section('js')
-   
+
 @endsection
